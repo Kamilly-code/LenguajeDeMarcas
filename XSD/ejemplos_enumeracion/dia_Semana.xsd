@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="dia_Semana">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="lunes"></xs:enumeration> 
+                <xs:enumeration value="martes"></xs:enumeration>
+                <xs:enumeration value="miercoles"></xs:enumeration>
+                <xs:enumeration value="jueves"></xs:enumeration>
+                <xs:enumeration value="viernes"></xs:enumeration>
+                <xs:enumeration value="sábado"></xs:enumeration>
+                <xs:enumeration value="domingo"></xs:enumeration>
+                <xs:whiteSpace value="collapse"></xs:whiteSpace>
+                <!-- Con collapse no sale error, y te deja poner los lunes con espacios-->
+            </xs:restriction> 
+            <!-- cuenta los espacios, tiene que ser exactamente igual.-->
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

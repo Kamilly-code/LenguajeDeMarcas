@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas_básicas</title>
+    <link rel="Stylesheet" href="styles.css">
+
+</head>
+    <body>
+        <header> <h1>Etiquetas Básicas</h1> </header>
+
+<main class="main">
+<section class="zero">
+    <article class="artigo1">
+            <h1 id="um">Primero necesitamos saber el que es HTML.</h1>
+            <p> &nbsp;&nbsp;&nbsp;HTML es un lenguaje de marcado que define la estructura de tu contenido. En concreto, consiste en una serie de elementos utilizados para encerrar diferentes partes del contenido para que se vean o se comporten de una determinada manera, lo que lo convierte en el esqueleto del sitio web.
+            Funciona de la siguiente manera, los navegadores web -Chrome, Firefox, Safari, Opera, etc.- leen e interpretan ese código HTML del que están hechos los sitios web con el objetivo de mostrar un contenido que sea entendible para los usuarios que lo visitan. Eso significa que cuando accedemos a cualquier sitio web, el navegador a través del cual lo hacemos, pide al servidor donde está alojado dicho sitio que envíe el documento. Este es un documento HTML que el navegador interpreta para mostrar el contenido al usuario final.
+            </p>
+    </article>
+</section>
+
+    <section class="one">
+    <article class="artigo1">
+        <h1 id="dois">Etiquetas básicas</h1>
+        <p>&nbsp;&nbsp;&nbsp;Las “etiquetas” HTML, son fragmentos de texto rodeados por paréntesis angulares &lt;&gt;, que tienen funciones y usos específicos y se utilizan para escribir código HTML, con el intuito de dar instrucciones al navegador sobre cómo mostrarlo al usuario.
+        Es decir, las etiquetas HTML son el lenguaje utilizado para estructurar y definir el contenido en un documento HTML. Estas etiquetas se encuentran en el HTML (o Lenguaje de Marcado de Hipertexto) de cada página.
+        </p>
+    </article>
+    </section>
+
+    <section class="two">
+    <article class="artigo1">
+<h1 id="tres">¿Cuáles son las etiquetas HTML más utilizadas?</h1>
+
+<div class="img">
+
+    <img src="../imagenes/ejemplo.png" alt="Ejemplo de las etiquetas básicas">
+
+</div>
+
+<div class="basic">
+<p> <b>&lt;!DOCTYPE&gt;:</b> Se utiliza para especificar la versión de HTML que se está utilizando en la página. </p>
+<p> <b>&lt;html&gt;:</b> Define el inicio y el final de la página web.
+</p>
+<p> <b>&lt;head&gt;:</b> Esa sería la sección de encabezado de la página, donde incluimos elementos como el título de la página, meta etiquetas, scripts, entre otros. Contiene todo lo que queremos incluir en la pagina HTML que no será visible a los visitantes de la página. 
+</p>
+<p> <b>&lt;meta charset="utf-8"&gt; — &lt;meta&gt;. :</b> Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos.
+</p>
+<p> <b>&lt;title&gt;:</b> Es el título de la página web que aparece en la pestaña del navegador.</p>
+<p> <b>&lt;styles&gt;:</b> Define los estilos que incorporaremos con CSS.</p>
+<p> <b>&lt;body&gt;:</b> Es el cuerpo de la página, se incluyen todos los elementos que serán visibles para el usuario.</p>
+<p> <b>&lt;p&gt;:</b> Etiqueta para párrafo</p>
+
+<p> <b>&lt;h1&gt; a &lt;h6&gt;:</b> Define los encabezados o títulos de diferentes niveles de jerarquía en la página web. </p>
+
+<p> <b>&lt;a&gt;:</b> Define un enlace que el usuario puede hacer clic para ir a otra página web o a una sección diferente de la misma página.</p>
+
+<p> <b>&lt;img&gt;:</b> Si queremos poner una imagen utilizamos el elemento <b>&lt;img&gt;.</b> Se trata de un elemento vacío que requiere de por lo menos un atributo para ser utilizado, ese atributo sería el src (source), que apunta a la imagen que quiere poner en la página, pudiendo así ser una URL relativa o absoluta. <br>Un ejemplo de esto es, si quieres poner una imagen donde el documento se llama <b>flower.jpg</b>, el código seria así:</p> 
+<div class="ejemplo">
+<p> <b> &lt;img src=" flower.jpg" &gt; </b>
+</p> 
+</div>
+<p>Si las imágenes estaban en la carpeta imagenes, entonces esas serían las instrucciones: 
+</p>
+<div class="ejemplo">
+<p> <b> &lt;img src="imagenes/ flower.jpg" &gt; </b> </p></div>
+<p> Y si la imagen está en otra carpeta distinta a la que estamos escribiendo el html quedaría de la siguiente manera:</p>
+<div class="ejemplo">
+<p> <b> &lt;img src="../imagenes/ flower.jpg" &gt; </b> </p></div>
+</div>
+</article>
+ </section>
+
+<section class="three">
+    <article class="artigo1">
+<h3 id="quatro" >EL ALT EN IMAGENEN </h3>
+
+<p> &nbsp;&nbsp;&nbsp; El atributo alt se debe a la descripción de la imagen, es utilizada para cuando la imagen no puede ser vista o cuando tarda demasiadamente para mostrarse para el usuario, así que presentamos una descripción para que el usuario entienda lo que sería la figura.</p>
+
+<p>Un ejemplo de esto seria:</p>
+<div class="ejemplo">
+<p>
+   <b> 
+    &lt;img
+  src="../imagenes/flower.jpg"
+  alt="La Diphylleia grayi es una planta sorprendente"&gt; 
+    </b>
+<div class="img1">
+    <img width="250px" src="../imagenes/flower.jpg" alt="La Diphylleia grayi es una planta sorprendente">
+</div>
+</p>
+</div>
+</article>
+</section>
+
+
+</main>
+<footer class="nav">
+    <ul>
+      <li><a href="Formulario-ejemplo.html" >CONTACTO</a></li>
+    </ul>
+  </footer>
+
+    </body>
+
+</html>

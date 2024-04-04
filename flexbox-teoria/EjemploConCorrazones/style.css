@@ -1,0 +1,121 @@
+/* */
+h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
+/* Espacio en blanco: fondo rojo y letra blanca en todos los p que estén dentro de un div*/
+div p {
+    background-color: red;
+    color: white;
+}
+
+/* Selector de hijo: fondo en azul en cualquier span que sea hijo de un p*/
+p > span {
+    background-color: DodgerBlue;
+}
+
+/* Selector adyacente: el primer p después de un h1 tendrá fondo amarillo */
+h1 + p {
+    background-color: yellow;
+}
+
+/* Selector de hermanos: fondo rosa en cualquier span precedido por p que estén a su mismo nivel */
+p ~ span {
+    background-color: pink;
+  }
+
+/* ****** PSEUDOCLASES ************* */  
+/* enlace no visitado */
+a:link {
+    color: lightgreen;
+    text-decoration: none; /* para que no salga subrayado*/
+  }
+  
+  /* enlace visitado */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* ratón sobre el enlace */
+  a:hover {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /* enlace activo (al hacer click sobre él */
+  a:active {
+    color: #0000FF;
+  }
+  
+/* hacemos que la lista sea un contenedor flexbox */
+ul {
+    width: 20%;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul > li {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+  
+ul > li:hover {
+    background-color: lightgreen;
+    color: black;
+  }
+
+  /* La primera línea de los párrafos con la clase "pseudoelementos" aparece en negrita*/
+p.pseudoelementos::first-line {
+    font-weight: bold;
+}  
+
+/* Importamos la fuente Great Vibes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Fuggles&family=Great+Vibes&family=Montserrat:wght@300&family=Sedgwick+Ave+Display&family=Source+Code+Pro&display=swap');
+/*
+font-family: 'Alegreya', serif;
+font-family: 'Fuggles', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Source Code Pro', monospace;
+*/
+
+/* La primera letra de cualquier párrafo con la clase pseudoelementos aparece en rojo, negrita, etc.*/
+p.pseudoelementos::first-letter {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: bold;
+    color: red;
+    font-size:x-large;
+}
+
+/* los marcadores de las listas tendrán el aspecto que aquí se indica */
+::marker {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: bold;
+    color: red;
+    font-size:x-large;
+}
+
+/* al seleccionar cualquier texto aparecerá con este estilo */
+::selection {
+    background-color: greenyellow;
+    color: red;
+
+}
+
+/* Añade un corazón antes de cada párrafo */
+p::before {
+    content: "♥ ";
+}
+/*los elementos que lleven la clase importante verán ese texto a continación  */
+.importante::after {
+    content: " <- ¡Importante!";
+    color: red;
+}
+ 

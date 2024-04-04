@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE johan [
+    <!ELEMENT johan (sisa?)>
+    <!ELEMENT sisa (nombre*,apellido*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST nombre dni ID #REQUIRED>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ATTLIST apellido apellido2 NMTOKENS  "janta">
+    <!ENTITY pato "pato Donald">
+    <!ENTITY escritor SYSTEM "https://www.w3schools.com/entities.dtd">
+    <!ENTITY copyright SYSTEM "https://www.w3schools.com/entities.dtd">
+
+]>
+
+<johan>
+    <sisa>
+        <nombre dni="a1">&pato;</nombre>
+        <apellido apellido2="janta">&escritor;&copyright;</apellido>
+        <apellido apellido2="janta"></apellido>
+    </sisa>
+
+</johan>

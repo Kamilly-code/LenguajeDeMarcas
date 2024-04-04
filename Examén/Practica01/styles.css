@@ -1,0 +1,104 @@
+
+/*Com flex-direction: row y flex-wrap
+.conteiner {
+    display: flex;
+    flex-wrap: wrap; /*Wrap é uma quedra de página para melhorar a visualización
+    flex-direction: row;
+}
+
+Quando flex-directioné row, o eixo principal corre horizontalmente, da esquerda para a direita. Esta é, portanto, a direção ao longo da qual os itens flexíveis são dispostos. O eixo transversal corre perpendicularmente, de cima para baixo, e quando os itens são enrolados, eles o fazem nessa direção.
+
+
+*/
+
+
+/*Com flex-direction: row-reverse; y flex-wrap: wrap-reverse;
+.conteiner {
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    flex-direction: row-reverse;
+}
+*/
+
+/*Com flex-direction: column; y flex-wrap: wrap;
+.conteiner {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    max-height: 35rem ;
+}
+
+Quando flex-directionestá definido como  column, os eixos principal e transversal mudam de posição. O eixo principal correrá verticalmente (de cima para baixo) e o eixo transversal correrá horizontalmente (da esquerda para a direita).
+
+*/
+
+/*Com flex-direction: column-reverse ; y flex-wrap: wrap-reverse;
+.conteiner {
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    flex-direction: column-reverse;
+    max-height: 35rem ;
+}
+*/
+
+/**/
+/*
+.item {
+    font-size: 2rem; /*Pode usar pix también, sao diferentes unidades de medida
+    width: 2rem; /*No terceiro colocamos isso de largura para ficar um quadradinho
+    line-height: 1; /*linha de altura
+    text-align: center; /*Alinhar o texto no centro
+    padding: 3rem; /*espacio dentro del item, es como se fuera el inflar de un balão
+    background: mistyrose; /*backgroud-color too
+    border: 3px solid tomato; /*Borda*
+    color: tomato; /*Color del texto
+    margin: 6px; /*Margen entre cada item
+  }*/
+  html {
+    background: #fff7f6;
+  }
+  h1 {
+    color: DarkSlateGrey;
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+  /*-- --*/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .container.flex-start {
+    align-items: flex-start;
+  }
+  .container.flex-end {
+    align-items: flex-end;
+  }
+  .container.center {
+    align-items: center;
+  }
+  .container.baseline {
+    align-items: baseline;
+  }
+  .container.stretch {
+    align-items: stretch;
+  }
+  .item {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    padding: 3rem;
+    background: mistyrose;
+    border: 3px solid tomato;
+    color: tomato;
+    margin: 6px;
+  }
+  .item.item-2 {
+    padding: 5rem;
+  }
+  .item.item-3 {
+    padding: 1.5rem;
+  }
+  .item.item-4 {
+    padding: .5rem 2rem 3rem;
+  }

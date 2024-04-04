@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url("imagem.jpg");
+}
+
+
+.nav2 a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+ ul   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+footer > ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer > .nav2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+
+
+.nav2 li  ul  {
+    display:none;
+}
+
+li:hover > ul  {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "enunciado.dtd" >
+
+<curriculum>
+    <datosPersonales nombre="Kamilly" apellidos="Brito da Mata" nacimiento="20/02/2004"/>
+    <detalles> 
+        <localizacion residencia="Calle Roma, 13,"
+            ciudad="Madrid," país="España"/>
+        <datosContacto teléfono="(613)65-41-65" correo="kamillybrittodm@gmail.com" linkedIn="KamillyBM" />
+    </detalles>
+        <descripcion>
+            Mensajero con 13 años de experiencia en transporte de documentos y paquetes urgentes a proveedores y clientes, utilizando los medios disponibles y siempre en los plazos acordados.
+        </descripcion>
+        <formacionAcademica>
+            <areaEstudio fechaLocal="Junio 2005 - IES Padre Luis Coloma Jerez de la Frontera" areaEstudio="FP de Grado Medio en Gestión Administrativa"
+            />
+            <aptitudes apt1="Separación de la carga" apt2="Cumplimentación de documentos" apt3="Reparto de cartas y paquetería" apt4="Reparto de cartas y paquetería" apt5=" Clasificación postal" apt6="Compromiso y profesionalidad" apt7="Familiaridad con distintos GPS"/>
+        </formacionAcademica>
+
+        <formacionProfesional>
+            <areaProfesional fecha="Febrero 2016 – Actual" local="Local: Correos Express – Jerez de la Frontera" encargo="Mensajero" />
+            <aptitudesP apt1= "Recogida a domicilio de sobres de documentos para su posterior envío mediante mensajería urgente." apt2="Presentación de documentos y notificaciones a diferentes entidades gubernamentales." apt3="Reparto de correspondencia y paquetes en coche y moto." />
+        </formacionProfesional>
+        <competencia idioma1= "inglês" idioma2="Português" idioma3="Español"/>
+</curriculum>

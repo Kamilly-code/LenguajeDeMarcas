@@ -1,0 +1,8 @@
+/*h1, h2, h3, p { /*Elemento linea, no podemos agregar ni width ni height
+    background-color: orange;
+}*/
+
+div { /*Elemento en bloque*/
+    width: 1000px;
+    background-color: aqua;
+}

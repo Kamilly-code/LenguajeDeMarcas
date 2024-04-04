@@ -1,0 +1,31 @@
+<clientes>
+    <cliente>
+        <nombre>xxxxxx</nombre>
+        <apellido1>yyyyyyyy</apellido1>
+        <apellido2>yyyyyyyy</apellido2>
+    </cliente>
+        
+    <fechaInicio>dd/mm/aa</fechaInicio>
+    <fechaFin>dd/mm/aa</fechaFin>
+
+    <origenDelViajen>Australia</origenDelViajen>
+
+    <detallesViaje>
+
+        
+        <nombreCiudad>Londres</nombreCiudad>
+
+        <nombreHotel>
+
+        </nombreHotel>
+
+        <numeroCoches>
+
+        </numeroCoches>
+
+        <precio>
+
+        </precio>
+        
+    </detallesViaje>
+</clientes>

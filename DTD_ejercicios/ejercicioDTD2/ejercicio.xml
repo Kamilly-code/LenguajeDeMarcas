@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "curriculum.dtd">
+
+
+<curriculum>
+    <datosPersonales>
+        <nombre>Kamilly</nombre>
+        <apellidos>Brito da Mata</apellidos>
+        <nacimiento>20/02/2004</nacimiento>
+        <!-- No puse la residencia aquí, pues no me encuadraba en el css, para el estilo de mi curriculum.-->
+       <foto>foto</foto>
+    </datosPersonales>
+    <detalles>
+        <localizacion>
+            <residencia>Calle Roma, 13,</residencia>
+            <ciudad>Madrid, </ciudad>
+            <país>España</país>
+        </localizacion>
+        <datosContacto>
+            <teléfono>(613)65-41-65</teléfono>
+            <correo>kamillybrittodm@gmail.com</correo>
+            <linkedIn>KamillyBM</linkedIn>
+        </datosContacto>
+    </detalles>
+        <descripcion>
+            Mensajero con 13 años de experiencia en transporte de documentos y paquetes urgentes a proveedores y clientes, utilizando los medios disponibles y siempre en los plazos acordados.
+        </descripcion>
+        <formacionAcademica>
+            <fechaLocal>Junio 2005 - IES Padre Luis Coloma Jerez de la Frontera</fechaLocal>
+            <areaEstudio>
+                FP de Grado Medio en Gestión Administrativa
+            </areaEstudio>
+            <aptitude>
+                Separación de la carga
+            </aptitude>
+            <aptitude>
+                Cumplimentación de documentos
+            </aptitude>
+            <aptitude>
+                Reparto de cartas y paquetería
+            </aptitude>
+            <aptitude>
+                Clasificación postal
+            </aptitude>
+            <aptitude>
+                Compromiso y profesionalidad
+            </aptitude>
+            <aptitude>
+                Familiaridad con distintos GPS
+            </aptitude>
+        </formacionAcademica>
+        <formacionProfesional>
+            <fecha>
+                Febrero 2016 – Actual
+            </fecha>
+            <local>
+                Local: Correos Express – Jerez de la Frontera
+            </local>
+            <encargo>
+                Mensajero
+            </encargo>
+            <aptitude>
+                Recogida a domicilio de sobres de documentos para su posterior envío mediante mensajería urgente.
+            </aptitude>
+            <aptitude>
+                Presentación de documentos y notificaciones a diferentes entidades gubernamentales.
+            </aptitude>
+            <aptitude>
+                Reparto de correspondencia y paquetes en coche y moto.
+            </aptitude>
+        </formacionProfesional>
+        <competencia>
+            <ingles>
+            Inglês:
+            </ingles>
+            <portugues>
+                Português:
+            </portugues>
+            <español>
+                Español:
+            </español>
+        
+        </competencia>
+</curriculum>

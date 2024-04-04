@@ -1,0 +1,20 @@
+<ciudades>
+    <!--Creamos como se fuera una lista ordenada en el html-->
+    <ciudad>
+        <nombre>Nueva Delhi</nombre>
+        <pais>India</pais>
+        <continente>Asia</continente>
+    </ciudad>
+
+    <ciudad>
+        <nombre>Lisboa</nombre>
+        <pais>Portugal</pais>
+        <continente>Europa</continente>
+    </ciudad>
+
+    <ciudad>
+        <nombre>El Cairo</nombre>
+        <pais>Egipto</pais>
+        <continente>África</continente>
+    </ciudad>
+</ciudades>

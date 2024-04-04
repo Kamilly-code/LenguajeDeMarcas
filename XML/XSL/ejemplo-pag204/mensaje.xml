@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+xs:noNamespaceSchemaLocation="mensaje.xsd" > <!--PQ SOLO XS-->
+<de>Anna</de>
+<para>Rocío</para>
+<mensajes>Ya estoy en la biblioteca</mensajes>
+</mensaje>

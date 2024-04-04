@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Mudar aqui-->
+<!DOCTYPE libro [
+  <!ELEMENT libro EMPTY>
+  <!ATTLIST libro autor NMTOKENS #REQUIRED> <!--NMTOKENS que son como três autores-->
+]>
+
+<libro autor="Mario Vargas Llosa" />

@@ -1,0 +1,21 @@
+<pedido>
+    <cliente>
+        <nombre>Juan</nombre>
+        <apellido1></apellido1>
+        <direccion></direccion>
+        <localidad></localidad>
+        <cp></cp>
+    </cliente>
+    <producto cantidad="2">
+        <nombre></nombre>
+        <precio></precio>
+    </producto>
+    <producto>
+        <nombre></nombre>
+        <precio></precio>
+    </producto>
+    <producto cantidad = "5">
+        <nombre>Brownie</nombre>
+        <precio>1.7</precio>
+    </producto>
+</pedido>

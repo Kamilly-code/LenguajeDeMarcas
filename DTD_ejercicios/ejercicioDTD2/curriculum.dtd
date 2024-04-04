@@ -1,0 +1,36 @@
+<!ELEMENT curriculum (datosPersonales,detalles,descripcion,formacionAcademica,formacionProfesional,competencia)>
+
+<!ELEMENT datosPersonales (nombre,apellidos,nacimiento,foto)>
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellidos (#PCDATA) >
+<!ELEMENT nacimiento (#PCDATA) >
+<!ELEMENT foto (#PCDATA) >
+
+<!ELEMENT detalles (localizacion,datosContacto)>
+
+<!ELEMENT localizacion (residencia,ciudad,país) >
+<!ELEMENT residencia (#PCDATA) >
+<!ELEMENT ciudad (#PCDATA) >
+<!ELEMENT país (#PCDATA) >
+
+<!ELEMENT datosContacto (teléfono,correo,linkedIn) >
+<!ELEMENT teléfono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT linkedIn (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT formacionAcademica (fechaLocal,areaEstudio,aptitude+)>
+<!ELEMENT fechaLocal (#PCDATA)>
+<!ELEMENT areaEstudio (#PCDATA)>
+<!ELEMENT aptitude (#PCDATA)>
+
+<!ELEMENT formacionProfesional (fecha,local,encargo,aptitude+)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT encargo (#PCDATA)>
+
+<!ELEMENT competencia (ingles,portugues,español)>
+<!ELEMENT ingles (#PCDATA)>
+<!ELEMENT portugues (#PCDATA)>
+<!ELEMENT español (#PCDATA)>

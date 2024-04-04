@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numero" type="xs:integer"/>
+                <xs:element name="cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="CIF"  >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="9"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="concepto" minOccurs="1" maxOccurs="unbounded" >
+                    <xs:complexType>
+                        <xs:sequence >
+                            <xs:element name="descripcion" type="xs:string"></xs:element>
+                            <xs:element name="importe" type="xs:double"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="impuesto">
+                    <xs:complexType mixed="true">
+                       <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="totalFactura">
+                    <xs:complexType>
+                        <xs:attribute name="euros" type="xs:double"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+        <!-- -->
+
+    </xs:element>
+</xs:schema>

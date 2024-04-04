@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="tarjetavuelos.css" ?>
+<tarjetavuelos>
+
+<vuelo>
+  <numero>PIA394</numero>
+  <avion>Airbus A380</avion>
+
+  <ruta>
+  <aeropuerto_origen>CDG</aeropuerto_origen>
+  <aeropuerto_destino>CUN</aeropuerto_destino>
+  <fecha_salida>18/06/2006</fecha_salida>
+  </ruta>
+
+  <pilotos>
+    <CDB>S. Thevenin</CDB>
+    <COPI>Y. Samj </COPI>
+  </pilotos>
+  <PNC>
+    <JEFECABINA>M. Hein</JEFECABINA>
+    <AUXILIAR>P. Torni</AUXILIAR>
+    <AUXILIAR>O. Voux</AUXILIAR>
+    <AZAFATA>R. ELAmar</AZAFATA>
+    <AZAFATA>S. Lokih</AZAFATA>
+    <AZAFATA>S. Roulon</AZAFATA>
+    <AZAFATA>G. Chollot</AZAFATA>
+  </PNC>
+</vuelo>
+
+<vuelo>
+  <numero>PIA395</numero>
+  <avion>Airbus A380</avion>
+
+  <ruta>
+    <aeropuerto_origen>CUN</aeropuerto_origen>
+    <aeropuerto_destino>CDG</aeropuerto_destino>
+    <fecha_salida>19/06/2006</fecha_salida>
+  </ruta>
+
+  <pilotos>
+    <CDB>T. Lapagne</CDB>
+    <COPI>Y. Malguot </COPI>
+    <COPI>C. Moise </COPI>
+  </pilotos>
+  <PNC>
+    <JEFECABINA>M. Hein</JEFECABINA>
+    <AUXILIAR>P. Torni</AUXILIAR>
+    <AUXILIAR>O. Voux</AUXILIAR>
+    <AZAFATA>R. ELAmar</AZAFATA>
+    <AZAFATA>S. Lokih</AZAFATA>
+    <AZAFATA>S. Roulon</AZAFATA>
+    <AZAFATA>G. Chollot</AZAFATA>
+  </PNC>
+</vuelo>
+
+<vuelo>
+  <numero>PIA895</numero>
+  <avion>Airbus A330</avion>
+
+  <ruta>
+  <aeropuerto_origen>CDG</aeropuerto_origen>
+  <aeropuerto_destino>LAX</aeropuerto_destino>
+  <fecha_salida>19/12/2006</fecha_salida>
+  </ruta>
+
+  <pilotos>
+    <CDB>F. Campese</CDB>
+    <COPI>S. Genois</COPI>
+  </pilotos>
+  <PNC>
+    <JEFECABINA>C. Pestoir</JEFECABINA>
+    <AUXILIAR>Y. Sourno</AUXILIAR>
+    <AUXILIAR>L. Vallo</AUXILIAR>
+    <AZAFATA>L. Faille</AZAFATA>
+    <AZAFATA>P. Poris</AZAFATA>
+    <AZAFATA>S. Hennes</AZAFATA>
+    <AZAFATA>J. Costa</AZAFATA>
+  </PNC>
+</vuelo>
+
+</tarjetavuelos>

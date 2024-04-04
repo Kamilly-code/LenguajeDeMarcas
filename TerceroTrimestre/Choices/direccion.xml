@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<direccion
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="direccion.xsd">
+        <particular>Calle San Miguel, 52</particular>
+    
+</direccion>

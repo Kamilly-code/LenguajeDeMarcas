@@ -1,0 +1,47 @@
+.one {
+    width: min-content ; /*Coom min-content toma o tamanho que necesita é como se fosse um auto*/
+    height: min-content ;
+    background-color: steelblue;
+    margin: 16px;
+    padding: 62px; /*A caixa cresce*/
+    border: 40px solid turquoise;
+    font-size: 64px;
+    display: block; /*Permite que seja uma caixa, em modelo de caixa*/
+    box-sizing: border-box; /*A caixa vai ter exatamente a largura e altura que colocamos no inicio*/
+}
+body {
+    margin: 0;
+}
+
+/*margin: 2px (margem superior e inferior) 4px (direita e esquerda) */
+
+/*margin: 2px (margem superior) 4px (direita e esquerda) 4px (inferior) */
+
+/*margin: 2px (margem superior) 4px (direita) 4px (inferior) 6px (esquerda)
+**Como se fosse os ponteiros de um relogio***/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.cero {
+    background-color: lightgreen ;
+}
+.primer {
+    background-color: lightcoral ;
+    padding: 5px 10px 15px 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}
+.segundo {
+    background-color: lightblue;
+    padding: 5px 10px 15px 20px;
+    border: 3px solid black;
+    border-radius: 4px;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+  <!ELEMENT cuadros (cuadro*)> <!--De um ou mais atributos-->
+  <!ELEMENT cuadro EMPTY>
+  <!ATTLIST cuadro titulo ID #REQUIRED>
+  <!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+
+<cuadros>
+  <cuadro titulo="Adán_y_Eva1" autor="Alberto Durero"  />
+  <cuadro titulo="Adán_y_Eva2" autor="Lucas Cranach, el viejo" /> <!-- BIEN-->
+</cuadros>

@@ -1,0 +1,8 @@
+<!DOCTYPE nota SYSTEM "externa.dtd">
+
+<nota> <!-- elemento que quieres elige tu el nombre-->
+    <para></para>
+    <de></de>
+    <cabecera></cabecera>
+    <cuerpo></cuerpo>
+</nota>

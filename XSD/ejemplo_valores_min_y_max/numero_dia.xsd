@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!-- ESQUEMA XSD-->
+    <xs:element name="numero_dia_semana">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger"> 
+                <xs:maxInclusive value="7"></xs:maxInclusive>
+
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

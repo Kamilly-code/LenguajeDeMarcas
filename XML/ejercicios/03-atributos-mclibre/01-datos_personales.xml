@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+  <!ELEMENT persona EMPTY>
+  <!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+
+<persona /> <!--CIERTO-->
+
+<!--[
+  <!ELEMENT nota (para,de,cabecera,cuerpo)>
+  <!ELEMENT para (#PCDATA)>
+  <!ELEMENT de (#PCDATA)>
+  <!ELEMENT cabecera (#PCDATA)>
+  <!ELEMENT cuerpo (#PCDATA)>
+  ]-->

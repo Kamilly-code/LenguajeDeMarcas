@@ -1,0 +1,8 @@
+/*
+Nesta tarefa, os itens da lista são a navegação de um site. Eles devem ser dispostos em linha, com igual espaço entre cada item.*/
+ nav ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    justify-content: space-evenly;
+ }

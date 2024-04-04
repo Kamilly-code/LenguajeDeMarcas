@@ -1,0 +1,47 @@
+<!ELEMENT curriculum (datosPersonales,detalles,descripcion,formacionAcademica,formacionProfesional,competencia)>
+    <!ELEMENT datosPersonales EMPTY>
+    <!ATTLIST datosPersonales nombre CDATA #REQUIRED>
+    <!ATTLIST datosPersonales apellidos CDATA #REQUIRED>
+    <!ATTLIST datosPersonales nacimiento CDATA #REQUIRED>
+
+    <!ELEMENT detalles (localizacion,datosContacto)>
+    <!ELEMENT localizacion EMPTY>
+    <!ATTLIST localizacion residencia CDATA #REQUIRED>
+    <!ATTLIST localizacion ciudad CDATA #REQUIRED>
+    <!ATTLIST localizacion país CDATA #REQUIRED>
+
+    <!ELEMENT datosContacto EMPTY>
+    <!ATTLIST datosContacto teléfono CDATA #REQUIRED>
+    <!ATTLIST datosContacto correo CDATA #REQUIRED>
+    <!ATTLIST datosContacto linkedIn CDATA #REQUIRED>
+
+    <!ELEMENT descripcion (#PCDATA)>
+
+    <!ELEMENT formacionAcademica (areaEstudio,aptitudes)>
+    <!ELEMENT areaEstudio EMPTY >
+    <!ATTLIST areaEstudio fechaLocal CDATA  #REQUIRED>
+    <!ATTLIST areaEstudio areaEstudio CDATA #REQUIRED>
+
+    <!ELEMENT aptitudes EMPTY >
+    <!ATTLIST aptitudes apt1 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt2 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt3 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt4 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt5 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt6 CDATA #REQUIRED>
+    <!ATTLIST aptitudes apt7 CDATA #REQUIRED>
+
+    <!ELEMENT formacionProfesional (areaProfesional,aptitudesP)>
+    <!ELEMENT areaProfesional EMPTY>
+    <!ATTLIST areaProfesional fecha CDATA #REQUIRED>
+    <!ATTLIST areaProfesional local CDATA #REQUIRED>
+    <!ATTLIST areaProfesional encargo CDATA #REQUIRED>
+    <!ELEMENT aptitudesP EMPTY>
+    <!ATTLIST aptitudesP apt1 CDATA #REQUIRED>
+    <!ATTLIST aptitudesP apt2 CDATA #REQUIRED>
+    <!ATTLIST aptitudesP apt3 CDATA #REQUIRED>
+    
+    <!ELEMENT competencia EMPTY>
+    <!ATTLIST competencia idioma1 NMTOKEN #REQUIRED>
+    <!ATTLIST competencia idioma2 NMTOKEN #REQUIRED>
+    <!ATTLIST competencia idioma3 NMTOKEN #REQUIRED>

@@ -1,0 +1,74 @@
+tarjetavuelos
+ {
+   position:absolute;
+   top:0px;
+   left:0px;
+   background-color:#CCCCCC;
+   padding:20px;
+ }
+vuelo
+ {
+   position:relative;
+   display:block;
+   width:300px;
+   background-color:#333333;
+   color:#FFFFFF;
+   font-family:Tahoma;
+   font-size:12pt;
+   padding:10px;
+ }
+avion
+ {
+   position:relative;
+   display:block;
+   width:300px;
+   background-color:#CCCC80;
+   color:#000000;
+   font-family:Tahoma;
+   font-size:10pt;
+   padding:5px;
+ }
+
+ruta
+ { 
+   position:relative;
+   display:block;
+   width:300px;
+   background-color:#FFFFFF;
+   color:#000000;
+   font-family:Tahoma,Arial,Helvetica,sans-serif;
+   font-size:12pt;
+   padding:2px;
+ }
+
+pilotos
+ {
+   position:relative;
+   display:block;
+   width:300px;
+   background-color:#CC2020;
+   color:#000000;
+   font-family:Tahoma;
+   font-size:10pt;
+   padding:5px;
+ }
+
+JEFECABINA
+ { 
+   position:relative;
+   display:block;
+   width:300px;
+   background-color:#FFFF70;
+   color:#000000;
+   font-family:Tahoma;
+   font-size:10pt;
+   padding:5px;
+ }
+AZAFATA,AUXILIAR
+ {
+   position:relative;
+   width:100px;
+   vertical-align:top;
+   font-family:Tahoma;
+   font-size:10pt;
+ }

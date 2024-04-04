@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="nombre_incidencia">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="frio"></xs:enumeration>
+        <xs:enumeration value="nieve"></xs:enumeration>
+        <xs:enumeration value="lluvia"></xs:enumeration>
+        <xs:enumeration value="calor"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType> <!-- Como se fuera un enumerado-->
+
+<xs:simpleType name="severidad_incidencia">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="alta"></xs:enumeration>
+        <xs:enumeration value="media"></xs:enumeration>
+        <xs:enumeration value="baja"></xs:enumeration>
+    </xs:restriction>
+</xs:simpleType>
+
+    <xs:element name="registro_temperatura">
+        <xs:complexType>
+            <xs:sequence >
+               
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
