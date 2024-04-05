@@ -7,8 +7,8 @@
     <temperatura_minima>-5</temperatura_minima>
     <temperatura_maxima>4</temperatura_maxima>
     <incidencias>
-        <incidencia nombre="frio" severidad="alta"> </incidencia>
-        <incidencia nombre="nieve" severidad="alta"> </incidencia>
-        <incidencia nombre="lluvia" severidad="media"> </incidencia>
+        <incidencia nombre="frio" severidad="alta"/>
+        <incidencia nombre="nieve" severidad="alta"/>
+        <incidencia nombre="lluvia" severidad="media"/>
     </incidencias>
 </registro_temperatura>

@@ -4,8 +4,8 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="cadena" type="xs:string"/>
-                <xs:element name="enteroPositivo" type="xs:positiveIntenger" default="1" />
-                <xs:element name="enteroNegativo" type="xs:nonNegativeIntenger" default="0" />
+                <xs:element name="enteroPositivo" type="xs:positiveInteger" default="1" />
+                <xs:element name="enteroNegativo" type="xs:nonNegativeInteger" default="0" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>

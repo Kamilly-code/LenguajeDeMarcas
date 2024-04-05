@@ -18,9 +18,35 @@
     </xs:restriction>
 </xs:simpleType>
 
-    <xs:element name="registro_temperatura">
+<xs:element name="registro_temperatura">
         <xs:complexType>
             <xs:sequence >
+                <xs:element name="provincia" type="xs:string"/> 
+                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="temperatura_minima">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="-50"></xs:minInclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>  
+                <xs:element name="temperatura_maxima">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer"><xs:maxInclusive value="50"></xs:maxInclusive></xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="incidencias">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="incidencia" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="nombre_incidencia"/>
+                                    <xs:attribute name="severidad" type="severidad_incidencia"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                
             </xs:sequence>
         </xs:complexType>
