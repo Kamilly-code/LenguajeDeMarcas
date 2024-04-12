@@ -16,6 +16,7 @@
                             <xs:simpleType>
                                 <xs:restriction base="xs:integer">
                                     <xs:minExclusive value="0"></xs:minExclusive>
+                                    <xs:maxInclusive value="500"></xs:maxInclusive>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
@@ -28,14 +29,14 @@
                 </xs:complexType>
             </xs:element>
 
-            <xs:element name="telefono" minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="telefono" minOccurs="0" maxOccurs="5">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
                         <xs:pattern value="\d{9}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            </xs:sequence>
+            </xs:sequence> <!-- Está fora da outra sequencia de elementos que colocamos no inicio-->
 
             <xs:attribute name="dni" use="required">
                 <xs:simpleType>
