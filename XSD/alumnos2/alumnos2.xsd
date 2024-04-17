@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="alumno" minOccurs="1" maxOccurs="unbounded" >
+                    <xs:complexType>
+                        <xs:attribute name="dni" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{8}[A-Z]"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                
+                <xs:element name="direccion">
+                    
+                </xs:element>
+
+            </xs:sequence>
+
+        </xs:complexType>
+
+      </xs:element>
+
+
+
+    
+</xs:schema>
