@@ -12,6 +12,6 @@
     <autor>Gabriel García Márquez</autor>
     <formato>Rústica</formato>
     <publicacion>1967</publicacion>
-    <precio>23,5</precio>
+    <precio>23.5</precio>
   </libro>
 </libreria>

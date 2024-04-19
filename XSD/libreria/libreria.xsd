@@ -22,10 +22,9 @@
                             <xs:element name="nombre" type="xs:string" minOccurs="1"></xs:element>
 
                             <xs:element name="telefono" minOccurs="0"
-                                maxOccurs="unbounded">
-
+                                maxOccurs="unbounded" > <!-- Ref telefono ou type: telefono-->
                                 <xs:simpleType>
-                                    <xs:restriction base="xs:integer">
+                                    <xs:restriction base="xs:string">
                                         <xs:pattern value="\d{9}"></xs:pattern>
                                     </xs:restriction>
                                 </xs:simpleType>
@@ -41,7 +40,7 @@
 
                             <xs:element name="autor" type="xs:string"></xs:element>
 
-                            <xs:element name="formato" minOccurs="0">
+                            <xs:element name="formato" minOccurs="0" >
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:enumeration value="Rústica"></xs:enumeration>
@@ -54,12 +53,7 @@
 
                             <xs:element name="publicacion" type="xs:positiveInteger" minOccurs="0"></xs:element>
 
-                            <xs:element name="precio" minOccurs="0">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="\d+,\d+"></xs:pattern>
-                                    </xs:restriction>
-                                </xs:simpleType>
+                            <xs:element name="precio" minOccurs="0" type="xs:double">
                             </xs:element>
 
                             <xs:element name="cantidad" type="xs:integer" minOccurs="0"></xs:element>
