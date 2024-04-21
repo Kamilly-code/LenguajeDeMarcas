@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>XML_Schema</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+<h1>XML Schema</h1>
+<p>XML Schema, es el nombre con el que se conoce habitualmente al lenguaje utilizado para proporcionar reglas para definir un dato. XM no puede realizar operaciones de computación por sí mismo. En cambio, <b>se puede implementar cualquier software o lenguaje de programación para la administración estructura de datos</b></p>
+<h2>IMPORTANTE ACRESCENTAR</h2>
+<p>XML permite um nível melhor de precisão ao establecer as reglas de validacão, conseguindo um melhor nível de detalhe que n4ao é posivél alcanzar com os DT, que foi o assunto que estudamos anteriormente.</p>
+<p>Creado para cubrir las carencias de los DTD, incorporando datos simples y complejos o cardionalidades en los lementos.</p>
+<img src="Captura de pantalla 2024-04-21 230234.png" alt="explicación detallada" width="600px"/>
+
+<h2>Como validar un documento XML?</h2>
+<p>Con .xsd</p>
+
+<h2>Estructura básica</h2>
+<p>A continuación, se muestra un ejemplo de las dos partes del uso de XML,la primera parte es la formatación normal del xml, y la segunda es de la parte que quieres validar en XSD (donde contine las estructuras y restricciones <b>EL XML DEBE INCLUIR UNA REFERENCIA AL DOCUMENTO XSD</b>)</p>
+<q>&lt;?xml version = "1.0" encoding "UTF-8"?&gt;</q>
+<br>
+<q>&lt;mensaje</q>
+<br>
+<q><b>xmlns:xs=</b>"http://www.w3.org/2001/XMLSchema-instance"</q>
+<br>
+<q><b>xs:noNamespaceSchemaLocation=</b>"mensaje.xsd"</q>
+<br>
+<q>&lt;de&gt;Anna&lt;/de&gt;</q>
+<q>&lt;para&gt;Rocío&lt;/para&gt;</q>
+<q>&lt;mensaje&gt;Ya estoy en la biblioteca&lt;/mensaje&gt;</q>
+<br>
+<q>&lt;/mensaje&gt;</q>
+
+<h2>ESTRUCTURA DE XSD</h2>
+<img src="Captura de pantalla 2024-04-21 233034.png" alt="Otra explicación" width="600px">
+<blockquote>Primeiro abre o elemento raíz do xml, depois tem que dizer se o elemento ñe complejo ou simples, como o elemento tem filhos é completo, depois vemos se tem uma sequencia de elementos, e sim tem na sequencia de elementos colocamos os filhos do elemento raíz , e suas ocorrencias (que serian quantas vezes o elemento aparece) e o seu tipo (que seria como as variaveis de java).</blockquote>
+<br>
+
+<h2>Elementos complejos en XSD (XML Schema)</h2>
+<p>Un elemento es complejo (complexType) cuando contiene uno o más elementos y/o atributos.</p>
+<p>*Un elemento complejo puede estar vacío, es decir, no contener elementos ni texto, pero sí tener al menos un atributo.
+    <br>
+   *Un elemento complejo puede contener contenido mixto, es decir, contener uno o más elementos, además de texto. Por otra parte, podría tener atributos, o no.</p>
+</body>
+
+<h2>ELEMENTO SIMPLES</h2>
+
+<p>Elementos simples solo pueden llevar su valor, no tienen hijos, ni atributos </p>
+<q>&lt;xs:element name = "nombre" type="tipo/ouRestição" maxOccurse="valor" minOccurs=vlor"&gt;</q>
+<q>&lt;xs:element name = "nome" maxOccure="ValoTal" minOccure="OtroValor"&gt; <br> &lt;xs:sympleType&gt; <br> &lt;xs:restriction base="tipo/DentroOuFora"&gt; <br> &lt;/xs:restriction&gt;<br>&lt;/xs:sympleType&gt;<br>&lt;/xs:element&gt;</q>
+<br><b>SEM FILHOS E SEM ATRIBUTOS</b>
+
+</html>
