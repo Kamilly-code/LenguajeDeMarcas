@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:annotation>
+    <xs:appinfo> Agenda Personal </xs:appinfo>
+    <xs:documentation>
+        <!-- El elemento de anotación es un elemento de nivel superior que especifica comentarios de esquema. Los comentarios sirven como documentación en línea.-->
+        Permite solo valores únicos de Agenda 
+        Verifica la validez del número telefónicos
+        Restringe edades menores a 18 y mayores a 65
+    </xs:documentation>
+</xs:annotation>
+    <xs:element name="empleados">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Aqui poderia ser sequence: que sao a seguencia de elementos obrigadorio e na ordem que eu coloquei (sequence | choice | all)
+                choice: elementos opcionais, posso utilizar um ou outro e tudo bem.
+            all: nao utilizamos, mas seria elemento em desordem e sem ser obrigatorio-->
+            <xs:element name="persona">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombreCompleto" type="xs:string"></xs:element>
+                        <xs:choice>
+                            <xs:element name="dataNacimiento" type="xs:date" ></xs:element>
+                            <xs:element name="localNacimiento" type="xs:string"></xs:element>
+                        </xs:choice>
+                        <xs:element name="hora_e_local_Nacimiento" type="xs:dateTime"></xs:element>
+                        <xs:element name="horas" type="xs:time"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="OtroElemento">
+                <xs:complexType>
+                    <xs:attribute name="comida" type="xs:string" use="required" ></xs:attribute>
+                    <!-- Elemento vazio nao tem elementos dentro-->
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="elemento2" minOccurs="1" maxOccurs="2">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d[0-9]{3}"> <!-- Por lo tanto, cuando se combinan, \d[0-9]{3} coincide con cualquier número de cuatro dígitos. El \d coincide con el primer dígito, y [0-9]{3} coincide con los siguientes tres dígitos.--></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    
+        
+    </xs:element>
+</xs:schema>

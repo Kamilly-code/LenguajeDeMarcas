@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados 
+xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="empleados.xsd" >
+<persona>
+    <nombreCompleto>Kamilly</nombreCompleto>
+    <dataNacimiento>2004-02-20</dataNacimiento> <!-- Aceita só con guión y con fecha el año de nacimiento primero-->
+    <!-- <localNacimiento>Planaltina-GO</localNacimiento> OU DATA DE NACIMIENTO OU LOCAL DE NACIMIENTO, OS DOIS NAO DÁ POR ISSO QUE O NOME É ESCOLHA-->
+    <hora_e_local_Nacimiento>2004-02-24T11:50:00</hora_e_local_Nacimiento> <!-- primeiro data e depois horas separados pelo t-->
+    <horas>11:30:00</horas>
+</persona>
+<OtroElemento comida="strogonoff"/>
+<elemento2>1000</elemento2>
+<elemento2>4561</elemento2>
+
+</empleados>
