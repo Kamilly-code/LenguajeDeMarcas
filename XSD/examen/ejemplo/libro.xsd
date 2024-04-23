@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="titulo" type="restriccionTitulo">
+
+                </xs:element>
+
+                <xs:element name="autor" type="restriccionAutor">
+
+                </xs:element>
+
+                <xs:element name="año" type="restriccionAño">
+
+                </xs:element>
+
+                <xs:element name="precio" type="restriccionPrecio">
+
+                </xs:element>
+
+            </xs:sequence>
+
+
+        
+        </xs:complexType>
+
+
+
+
+    </xs:element>
+
+    <xs:simpleType name="restriccionTitulo">
+<xs:restriction base="xs:string">
+    <xs:pattern value="[\w .,!?\-]+"></xs:pattern> <!-- Tem que colocar espço também para especificar que sao o que eles aceitam-->
+</xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="restriccionAutor">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z. ]+[\w ]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="restriccionAño">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:pattern value="[1-9]{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="restriccionPrecio">
+        <xs:restriction base="xs:double">
+            <xs:pattern value="\d+\.\d+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

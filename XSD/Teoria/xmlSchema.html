@@ -45,7 +45,8 @@
 <p>Un elemento es complejo (complexType) cuando contiene uno o más elementos y/o atributos.</p>
 <p>*Un elemento complejo puede estar vacío, es decir, no contener elementos ni texto, pero sí tener al menos un atributo.
     <br>
-   *Un elemento complejo puede contener contenido mixto, es decir, contener uno o más elementos, además de texto. Por otra parte, podría tener atributos, o no.</p>
+   *Un elemento complejo puede contener contenido mixto, es decir, contener uno o más elementos, además de texto. Por otra parte, podría tener atributos, o no. <br>
+*All: em qualquer ordem, mas só uma vez</p>
 </body>
 
 <h2>ELEMENTO SIMPLES</h2>
@@ -54,5 +55,28 @@
 <q>&lt;xs:element name = "nombre" type="tipo/ouRestição" maxOccurse="valor" minOccurs=vlor"&gt;</q>
 <q>&lt;xs:element name = "nome" maxOccure="ValoTal" minOccure="OtroValor"&gt; <br> &lt;xs:sympleType&gt; <br> &lt;xs:restriction base="tipo/DentroOuFora"&gt; <br> &lt;/xs:restriction&gt;<br>&lt;/xs:sympleType&gt;<br>&lt;/xs:element&gt;</q>
 <br><b>SEM FILHOS E SEM ATRIBUTOS</b>
+<p>Los elementos simples en XML Schema (XSD) son aquellos que contienen solo texto. No pueden tener atributos ni contener otros elementos. Se definen utilizando la etiqueta &lt;xs:element&gt; con un atributo type que especifica el tipo de datos del contenido del elemento.</p>
+<p>Aquí hay algunos ejemplos de elementos simples en XSD:</p>
+<p>1.Elemento simple de tipo string</p>
+<p>&lt;xs:element name="nombre" type="xs:string"/&gt;</p>
+<p>
+    <br>
+    2. Elemento simple de tipo integer:
+    
+    <br>
+    &lt;xs:element name="edad" type="xs:integer"/&gt;
+    <br><br>
+    
+    Este elemento se llama "edad" y puede contener cualquier número entero.
+    <br><br>
+    3. Elemento simple de tipo boolean:
+    
+    <br><br>
+    &lt;xs:element name="esEstudiante" type="xs:boolean"/&gt;
+    <br><br>
+    
+    Este elemento se llama "esEstudiante" y puede contener los valores "true" o "false".
+    <br><br>
+    Además de los tipos de datos básicos como `xs:string`, `xs:integer` y `xs:boolean`, XSD también proporciona muchos otros tipos de datos, como `xs:date` para fechas, `xs:decimal` para números decimales, y `xs:positiveInteger` para números enteros positivos, entre otros.</p>
 
 </html>

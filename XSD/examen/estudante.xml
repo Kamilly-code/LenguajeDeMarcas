@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estudante 
+xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="estudante.xsd">
+
+Querido <Nombre>Princepezo</Nombre>
+Seu pedido <pedido>1234</pedido>
+Ira ser entregue no dia <dataEntrega>2001-07-13</dataEntrega>
+
+</estudante>

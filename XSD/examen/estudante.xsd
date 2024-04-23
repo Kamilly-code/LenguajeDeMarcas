@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="estudante"> <!-- Elemento ríz , nao o arquivo, misericordia KAmilly-->
+    <xs:annotation>
+        <xs:documentation>https://tutorialreference.com/xml/xsd/complex-elements/xsd-mixed</xs:documentation>
+    </xs:annotation>
+       <xs:complexType mixed="true"> <!-- Aqui colocamos o mixed, oara dizer que é um elemetno misturado, ou seja tem filhos, mas pulou a cerca e tem sua propria escrita dentro, uma mistura de elemento simples e complejo-->
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"></xs:element>
+            <xs:element name="pedido" type="xs:positiveInteger"></xs:element>
+            <xs:element name="dataEntrega" type="xs:date"></xs:element>
+            
+        </xs:sequence>
+       </xs:complexType>
+    </xs:element>
+</xs:schema>
